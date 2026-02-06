@@ -7,7 +7,7 @@ def subtract(x, y):
 
 
 def divide(x, y):
-    if b == 0;
+    if b == 0:
         return "Cannot divide by 0"
     return x / y
 
