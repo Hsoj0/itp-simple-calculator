@@ -7,7 +7,7 @@ Steps:
 
 # install the python to run the python code
   - name: Setup Python
-      uses: actions/setup-python@v6
+      uses: actions/setup-python@v6;
       with:
         python-version: "3.10"
 
