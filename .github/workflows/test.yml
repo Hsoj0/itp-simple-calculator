@@ -22,4 +22,7 @@ jobs:
 
     - name: Test
       run: pytest
+
+    - name: Deployment
+      run: echo "Deploying..."
           
