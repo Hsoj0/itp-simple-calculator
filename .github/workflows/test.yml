@@ -1,0 +1,25 @@
+name: CI/CD
+
+on: 
+  push: 
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check Code
+      uses: actions/checkout@v6
+
+    - name: Setup Python
+      uses: actions/setup-python@v6
+      with:
+        python-version: "3.6"
+
+    - name: Install Dependencies
+      run: pip install -r requirements.txt
+
+    - name: Test
+      run: pytest
+          
