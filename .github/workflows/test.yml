@@ -7,6 +7,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    container:
+      image: python:3.6
 
     steps:
     - name: Check Code
@@ -15,7 +17,7 @@ jobs:
     - name: Setup Python
       uses: actions/setup-python@v6
       with:
-        python-version: "3.6.7"
+        python-version: "3.6"
 
     - name: Install Dependencies
       run: pip install -r requirements.txt
